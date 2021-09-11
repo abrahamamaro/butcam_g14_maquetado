@@ -1,0 +1,42 @@
+// este archivo define los estilos de mi header
+header {
+    background: primaryColor;
+    min-height: 100vh;
+    .showcase-content {
+        @include displayFlexRow();
+        img {
+            max-width: 350px;
+        }
+        .section-col {
+            max-width: 50%;
+            color: $textColorWhite;
+            line-height: 1.5;
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                line-height: 1.5;
+                font-size: 12px;
+                margin: 20px 0;
+            }
+        }
+    }
+    nav {
+        .logo {
+            font-size: 1.5em;
+        }
+        width: 100%;
+        @include displayFlexRow();
+        padding: 20px 0;
+        ul {
+            @include displayFlexRow();
+            li {
+                padding: 0 10px;
+            }
+        }
+        a {
+            color: $textColorWhite;
+            text-decoration: none;
+        }
+    }
+}

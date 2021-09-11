@@ -1,8 +1,9 @@
 $bgColorBody: #1d0b0b;
 $bodyFontSize: 40px;
+$siteFont: sans-serit,
+arial;
 body {
-    background-color: #000;
-    color: black;
+    font-family: $siteFont;
 }
 
 .navigation {
@@ -25,3 +26,5 @@ body {
         color: blue;
     }
 }
+
+.caja {}

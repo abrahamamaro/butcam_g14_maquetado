@@ -1,0 +1,47 @@
+// traer mis modulos de estilos
+@import "config";
+@import "mixins";
+@import "header";
+@import "./responsive/tablet";
+@import "./responsive/mobile";
+//mixins
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primaryColor;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 3px;
+    min-width: 130px;
+    text-align: center;
+    border: 1 solid #000;
+    padding: 5px;
+    color: #fff;
+    transition: transform 300ms ease;
+    &.btn-primary {
+        background-color: lighten($primaryColor, 100%);
+    }
+    &.btn-secundary {
+        background-color: darken($secundaryColor, 10%);
+    }
+    &:hover {
+        transform: scale(.98);
+    }
+}

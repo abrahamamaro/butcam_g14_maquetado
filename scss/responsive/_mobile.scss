@@ -1,0 +1,10 @@
+@media(min-width:320px) and (max-width:720px) {
+    header {
+        background-color: green;
+        .showcase-content {
+            .section-col {
+                max-width: 80%;
+            }
+        }
+    }
+}

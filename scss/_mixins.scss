@@ -1,0 +1,14 @@
+// aqui estan mis mixins
+@mixin displayFlexRow {
+    display: row;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin displayFlexDinamico ($direction) {
+    display: row;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
